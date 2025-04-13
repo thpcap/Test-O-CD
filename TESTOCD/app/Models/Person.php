@@ -10,6 +10,20 @@ class Person extends Model
     use HasFactory;
 
     /**
+     * Les attributs assignables en masse.
+     *
+     * @var array
+     */
+    protected $fillable = [
+        'first_name',
+        'last_name',
+        'birth_name',
+        'middle_names',
+        'date_of_birth',
+        'created_by',
+    ];
+
+    /**
      * Les relations Eloquent.
      */
 
